@@ -2,11 +2,11 @@
 const express = require('express');
 const http = require('http');
 const socketIo = require('socket.io');
-
+const cors = require("cors")
 const app = express();
 const server = http.createServer(app);
 const io = socketIo(server);  // Inicializar Socket.IO con el servidor HTTP
-
+app.use(cors());
 app.get("/", (req, res)=>{
     res.send("jdj")
   })
