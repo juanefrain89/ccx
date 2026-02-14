@@ -1,7 +1,7 @@
 const express = require('express');
 const { SerialPort } = require('serialport');  
 
-// Crea una instancia de Express
+
 const app = express();
 const port = 3000;  
 
